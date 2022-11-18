@@ -8,3 +8,4 @@ let userDataTenYearLater = name + surname + color + ageTenYearLater;
 
 document.getElementById('result').innerHTML = userData + "<br>" + userDataTenYearLater;
 document.getElementById('name').innerHTML = name;
+document.getElementById('surname').innerHTML = surname;

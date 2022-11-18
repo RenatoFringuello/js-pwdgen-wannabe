@@ -2,56 +2,72 @@ body{
     font-family: "Permanent Marker", cursive;
 }
 
+/* ---------------------------------- book ---------------------------------- */
 .book {
-    border: 1px solid;
-    border-radius: 0px 20px 20px 0px;
-    width: clamp(300px, 40%, 500px);
-    height: clamp(600px, 80%, 800px);
+    border-radius: 3px 20px 20px 3px;
+    height: clamp(600px, 87vh, 800px);
     background-color: bisque;
-    box-shadow: rgba(0, 0, 0, 0.133) 10px 6px;
+    box-shadow: #0002 10px 6px;
+    overflow: hidden;
 }
 .tag {
-    width: clamp(180px, 70%, 300px);
     margin-top: 4rem !important;
     background-color: rgb(255, 252, 244);
     border-radius: 15px;
 }
 .tag-border {
-    border: 5px solid rgb(143, 0, 0);
+    border: 5px solid #800;
     border-radius: 10px;
     width: 100%;
     height: 100%;
 }
 
 .line {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.533);
+    border-bottom: 2px solid #0005;
 }
 .title {
     font-family: monospace;
     color: rgb(86, 86, 255);
-    font-size: 0.8rem;
+    font-size: 0.65rem;
 }
 .value {
-    font-size: 1.5rem;
+    font-size: 2rem;
+}
+.line .value{
+    height: 2rem;
+    margin-bottom: -5px !important;
 }
 
+/* ---------------------------------- ids ---------------------------------- */
 #result {
     font-family: "Caveat", cursive;
     bottom: 45px;
     right: 20px;
     transform: rotate(-15deg);
-    color: rgba(136, 0, 0, 0.867);
+    color: #800;
     z-index: 1;
 }
 
-
-
+/* ---------------------------------- my-classes ---------------------------------- */
 .my-container{
+    max-width: 1200px;
+}
+.my-row{
     height: 100vh;
 }
+
 .my-p-1 {
     padding: 0.5rem;
 }
 .my-p-3 {
     padding: 1.5rem;
+}
+.my-rotation-1{
+    transform: rotate(2.5deg);   
+}
+.my-rotation-2{
+    transform: rotate(3.2deg);   
+}
+.my-neg-rotation-1{
+    transform: rotate(-2.5deg);   
 }

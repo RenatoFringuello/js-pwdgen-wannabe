@@ -20,33 +20,47 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <main>
-        <div class="my-container d-flex">
-
-            <div class="book m-auto position-relative">
-                <div class="tag my-p-1 d-flex m-auto">
-                    <div class="tag-border my-p-1">
-                        <div class="content">
-                            <div class="line mb-2">
-                                <h5 class="title text-uppercase m-0">name</h5>
-                                <h1 class="value m-0 text-center me-3" id="name"></h1>
+    <div class="container-fluid container-lg my-container">
+        <!-- row -->
+        <div class="row my-row">
+            <div class="col-11 col-sm-9 col-md-8 col-lg-7 m-auto">
+                <!-- book -->
+                <div class="book position-relative">
+                    <div class="row">
+                        <div class="col-8 col-lg-7 m-auto">
+                            <!-- book tag -->
+                            <div class="tag my-p-1 d-flex">
+                                <div class="tag-border my-p-1">
+                                    <div class="content">
+                                        <div class="line mb-2">
+                                            <h5 class="title text-uppercase m-0">name</h5>
+                                            <h1 class="value text-center m-0 me-3 my-rotation-2" id="name"></h1>
+                                        </div>
+                                        <div class="line mb-2">
+                                            <h5 class="title text-uppercase m-0">surname</h5>
+                                            <h1 class="value text-center m-0 me-1 my-rotation-1" id="surname"></h1>
+                                        </div>
+                                        <div class="line mb-2">
+                                            <h5 class="title text-uppercase m-0">subject</h5>
+                                            <h1 class="value text-center m-0 ms-4 my-neg-rotation-1">Math :(</h1>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="line mb-2">
-                                <h5 class="title text-uppercase m-0">subject</h5>
-                                <h1 class="value m-0 text-center ms-4">Math :(</h1>
-                            </div>
+                            <!-- end book -->
                         </div>
                     </div>
+                    
+                    <div class="position-absolute value" id="result"></div>
+                    <div class="position-absolute w-100 my-p-3 bottom-0">
+                        <img src="https://monocromo.eu/wp-content/themes/monocromo/dist/images/monocromo-logo.svg" alt="monocromo logo">
+                    </div>
                 </div>
-                <div class="position-absolute value" id="result"></div>
-                <div class="position-absolute w-100 my-p-3 bottom-0">
-                    <img src="https://monocromo.eu/wp-content/themes/monocromo/dist/images/monocromo-logo.svg" alt="monocromo logo">
-                </div>
+                <!-- end book -->
             </div>
-
         </div>
-    </main>
+        <!-- end row -->
+    </div>
 
     <!-- script js -->
     <script type="text/javascript" src="./js/script.js"></script>

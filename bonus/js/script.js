@@ -1,7 +1,10 @@
-let nome = prompt("Inserisci il tuo NOME");
-let cognome = prompt("Inserisci il tuo COGNOME");
-let colore = prompt("Inserisci il tuo COLORE PREFERITO");
+let name = prompt("Inserisci il tuo NOME");
+let surname = prompt("Inserisci il tuo COGNOME");
+let color = prompt("Inserisci il tuo COLORE PREFERITO");
+let ageTenYearLater = parseInt(prompt("Quanti anni hai?")) + 10;
 
-let userData = nome + cognome + colore + "22";
+let userData = name + surname + color + "22";
+let userDataTenYearLater = name + surname + color + ageTenYearLater;
 
-document.getElementById('userData').innerHTML = userData;
+document.getElementById('result').innerHTML = userData + "<br>" + userDataTenYearLater;
+document.getElementById('name').innerHTML = name;

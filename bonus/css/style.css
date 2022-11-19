@@ -1,18 +1,26 @@
 body{
     font-family: "Permanent Marker", cursive;
+    background-image: url('../img/desk.webp');
+    background-position: center;
+    background-size: cover;
 }
 
 /* ---------------------------------- book ---------------------------------- */
 .book {
     border-radius: 3px 20px 20px 3px;
-    height: clamp(600px, 87vh, 800px);
-    background-color: bisque;
-    box-shadow: #0002 10px 6px;
-    overflow: hidden;
+    box-shadow: -6px 0px 8px 1px #0005;
 }
+.book img{
+    filter: hue-rotate(90deg);
+}
+.book .row{
+    z-index: 1;
+    margin-left: 0 !important;
+}
+
 .tag {
     margin-top: 4rem !important;
-    background-color: rgb(255, 252, 244);
+    background-color: #fffcf4;
     border-radius: 15px;
 }
 .tag-border {
@@ -27,7 +35,7 @@ body{
 }
 .title {
     font-family: monospace;
-    color: rgb(86, 86, 255);
+    color: #5656ff;
     font-size: 0.65rem;
 }
 .value {
@@ -40,11 +48,13 @@ body{
 
 /* ---------------------------------- ids ---------------------------------- */
 #result {
-    font-family: "Caveat", cursive;
+    /* font-family: "Caveat", cursive; */
+    font-family: 'Reenie Beanie', cursive;
     bottom: 45px;
     right: 20px;
     transform: rotate(-15deg);
-    color: #800;
+    color: #2e2ed5;
+    font-weight: 100;
     z-index: 1;
 }
 
